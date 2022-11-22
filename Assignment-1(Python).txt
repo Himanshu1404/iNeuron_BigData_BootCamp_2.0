@@ -1,0 +1,149 @@
+## Assignment Part-1
+Q1. Why do we call Python as a general purpose and high-level programming language?
+ANS1. 	Object-oriented means this language is based around objects (such as data) rather than functions, and high-level means it's easy for humans to understand.
+
+Q2. Why is Python called a dynamically typed language?
+ANS2. 	Because the type is determined during runtime.
+
+Q3. List some pros and cons of Python programming language?
+ANS3. 	Pros - 	It's Simple
+				It's Free
+				It's Easy to Use
+				It's Highly Compatible 
+				It is Object-Oriented
+				It has Lots of Libraries
+				It has Built-in Data Structures
+				It's Widely Applicable
+				It Increases Speed and Productivity
+				It's Easy to Learn 
+		Cons - 
+				Poor Memory Efficiency
+				Slow Speed
+				Database Access
+				Weak in Mobile Computing
+				Runtime Errors
+				 
+
+Q4. In what all domains can we use Python?
+ANS4. 	developing websites and software, task automation, data analysis, and data visualization, artificial intelligence, machine learning and deep learning
+
+Q5. What are variable and how can we declare them?
+ANS5. 	Variables are containers for storing data values.
+		In other prog. lan. a variable's type has to be specified before it may be assigned to a value. This process is called variable declaration. 
+		But in Python, we don't declare variables, we simply assign them. In short, we can think of a variable in Python as a name for an object.
+
+Q6. How can we take an input from the user in Python?
+ANS6. 	a=input() and it always have string datatype
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+ANS7. 	input() fundction have default string datatype
+
+Q8. What is type casting?
+ANS8. 	Changing the variable datatype to other datatype.
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+ANS9. 	a.b=input().split()
+
+Q10. What are keywords?
+ANS10.	Keywords in Python are unique reserved words that cannot use a keyword as a variable, function, or other identifiers. 
+		These special words are used to define the syntax and structure of the Python language
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+ANS11. 	No, we can not use keywords as a variable because it is already reserved.
+
+Q12. What is indentation? What's the use of indentaion in Python?
+ANS12. 	Spaces at the beginning of a code line
+
+Q13. How can we throw some output in Python?
+ANS13.	by print() function
+
+Q14. What are operators in Python?
+ANS14.	Operators are used to perform operations on variables and values
+
+Q15. What is difference between / and // operators?
+ANS15. 	/ - division
+		// - Floor Division (digit after the decimal is removed)
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+ANS16.	print("iNeuron"*4)
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+ANS17. a=int(input("Enter the number which we want to check even or odd??"))
+		if a%2==0:
+			print("Even")
+		else :
+			print("Odd")
+
+Q18. What are boolean operator?
+ANS18. Boolean Operators are those that result in the Boolean values of True and False. 
+These include and, or and not. While and & or require 2 operands, not is a unary operator.
+
+Q19. What will the output of the following?
+ANS19.
+```
+1 or 0 --> 1
+
+0 and 0 --> 0
+
+True and False and True --> False
+
+1 or 0 or 0 --> 1
+```
+
+Q20. What are conditional statements in Python?
+		if.
+		if..else.
+		Nested if.
+		if-elif statements.
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+ANS21. The if…elif…else statement is used in Python for decision making
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+ANS22.	a=int(input("Enter the age of person"))
+		if a>=18:
+			print("I can vote")
+		else :
+			print("I can't vote")
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+ANS23. 	numbers = [12, 75, 150, 180, 145, 525, 50]
+		a=0
+		for i in numbers:
+			if i%2==0:
+				a=a+i
+		print(a)
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+ANS24. 	a=[]
+		for i in range(1,4):
+			a.append(int(input()))
+		print("largest number among the three input number is ",max(a))
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+ANS25. 	a=[]
+		numbers = [12, 75, 150, 180, 145, 525, 50]
+		for i in numbers:
+			if i%5==0:
+				if i>150 and i<501:
+					continue
+				elif i>500:
+					break
+				else:
+					a.append(i)
+		print(a)
+
